@@ -7,11 +7,13 @@
  */
 
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import AppContanier from './navigation/text';
 
-import Hello from './component/Hello';
-
-function App() {
-  return <Hello />;
+export default function App() {
+  return (
+    <NavigationContainer>
+      <AppContanier />
+    </NavigationContainer>
+  );
 }
-
-export default App;
